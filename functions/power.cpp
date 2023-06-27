@@ -1,4 +1,4 @@
-
+// 1) Write a function that should output the power of n
 #include <iostream>
 using namespace std;
 
