@@ -1,3 +1,4 @@
+1) Write a Function to check Wheather the given number is Prime Number or Not
 #include <iostream>
 using namespace std;
 
