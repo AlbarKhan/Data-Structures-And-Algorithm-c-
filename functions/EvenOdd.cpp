@@ -1,3 +1,5 @@
+//Below Function is to find the Wheather the given number is Even or off
+
 #include <iostream>
 using namespace std;
 
