@@ -1,3 +1,4 @@
+// Below Code is to find the Peak  Element in an array (Binary Search)
 #include <Iostream>
 #include <math.h>
 using namespace std;
