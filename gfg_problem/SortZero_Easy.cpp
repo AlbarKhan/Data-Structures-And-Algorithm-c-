@@ -28,7 +28,7 @@ int last(int arr[],int n){
 	int e=n-1;
 	int mid=s+(e-s)/2;
 	int ans=-1;
-	while(s<=e){
+	while(s<=	e){
 		if(arr[mid]==0){
 			ans=mid;
 			s=mid+1;
