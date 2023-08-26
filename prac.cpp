@@ -2,22 +2,25 @@
 #include <math.h>
 using namespace std;
 
-int peakElement(int arr[],int n){
-		int s=0;
+int peakElement(int arr[],int n,int x){
+:w		int s=0;
 		int e=n-1;
 		int mid=s+(e-s)/2;
-
-		while(s<e){
-			if(arr[mid]<=arr[mid+1]){
-				s=mid+1;
+		int ans;
+		while(s<=e){
+			if(arr[mid]==x){
+				ans=mid;
+				e=mid-1;
 			}
-			else{
-				e=mid;
+			else if(arr[mid]>x){
+				e=mid-1;
+			}
+			else if(arr[mid]<x){
+				s=mid+1;
 			}
 			mid=s+(e-s)/2;
 		}
-		return arr[s];
-		
+		return ans;
 }
 
 
@@ -25,7 +28,7 @@ int main(){
 //	int n;
 //	cin>>n;
 
-	int num[7]={1,12,6,5,4,3,2};
-	cout<<peakElement(num,7);
+	int num[5]={1,2,3,4,5};
+	cout<<peakElement(num,5,4);
 
 }
